@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheapest Options</title>
+</head>
+<body>
+    <h1>Cheapest Options for "{{ request.form['product_name'] }}"</h1>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Link</th>
+        </tr>
+        {% for item in prices %}
+        <tr>
+            <td>{{ item['name'] }}</td>
+            <td>{{ item['price'] }}</td>
+            <td>
+                <img src="{{ item['image'] }}" alt="Product Image" width="100">
+            </td>
+            <td>
+                <a href="{{ item['link'] }}" target="_blank">View</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('index') }}">Search Again</a>
+</body>
+</html>

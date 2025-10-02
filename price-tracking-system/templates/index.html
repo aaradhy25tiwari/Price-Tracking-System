@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Price Tracking System</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Price Tracking System</h1>
+        <form method="POST" action="/">
+            <label for="product_name">Product Name:</label>
+            <input type="text" id="product_name" name="product_name" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="">Select Category</option>
+                <option value="electronics">Electronics</option>
+                <option value="appliances">Appliances</option>
+                <option value="furniture">Furniture</option>
+            </select>
+
+            <label for="price_range">Price Range:</label>
+            <input type="text" id="price_range" name="price_range" placeholder="e.g. 1000-5000">
+
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>

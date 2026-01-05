@@ -33,7 +33,7 @@ price-tracking-system
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/aaradhy25tiwari/Price-Tracking-System.git
    cd price-tracking-system
    ```
 
@@ -58,7 +58,3 @@ price-tracking-system
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-
-This project is licensed under the MIT License.
